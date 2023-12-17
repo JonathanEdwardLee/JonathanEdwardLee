@@ -4,72 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leadership Class - Official Band Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background: #f4f4f4;
+            color: #333;
         }
         header {
-            background: #333;
+            background: #222;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
         nav {
-            background: #444;
-            padding: 0 10px;
+            background: #333;
+            overflow: hidden;
         }
-        nav ul {
-            padding: 0;
-            list-style: none;
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .hero {
+            background: url('LC_fantasyLogo.png') no-repeat center center/cover;
+            height: 400px;
             display: flex;
             justify-content: center;
+            align-items: center;
+            color: #fff;
         }
-        nav ul li {
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
         }
         .content {
             padding: 20px;
+            text-align: center;
         }
         footer {
-            background: #333;
+            background: #222;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+        }
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Leadership Class</h1>
-        <p>Welcome to the official website of Leadership Class!</p>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="tour.html">Tour</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="visuals.html">Visuals</a></li>
-            <li><a href="merch.html">Merch</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="tour.html">Tour</a>
+        <a href="music.html">Music</a>
+        <a href="visuals.html">Visuals</a>
+        <a href="merch.html">Merch</a>
+        <a href="contact.html">Contact</a>
     </nav>
+    <div class="hero">
+        <h1>Welcome to Leadership Class</h1>
+    </div>
     <div class="content">
         <h2>Latest News</h2>
-        <p>Here you can put the latest news or updates about the band. Maybe a new album release or an upcoming tour.</p>
+        <p>Next show: January 12th at Lindberg's with City Grey, Alamo Black, The Kursk, and </p>
         <h2>Featured Music</h2>
-        <p>Embed your latest music video or a music player here.</p>
-        <!-- You can embed music from platforms like SoundCloud or Spotify, or use an HTML5 audio player for your own hosted tracks -->
+        <p>Coming soon...</p>
     </div>
     <footer>
         <p>&copy; 2023 Leadership Class. All rights reserved.</p>
