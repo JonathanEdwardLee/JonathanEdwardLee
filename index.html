@@ -13,11 +13,9 @@
             background: #f4f4f4;
             color: #333;
         }
-        header {
-            background: url('LC_header_logo.jpg') no-repeat center center/cover;
-            color: #fff;
-            padding: 300px;
-            text-align: center;
+        header img {
+            width: 100%; /* Ensures the image takes the full width of the header */
+            height: auto; /* Keeps the aspect ratio of the image */
         }
         nav {
             background: #333;
@@ -66,7 +64,9 @@
 </head>
 <body>
     <header>
+        <img src="path-to-your-header-image.jpg" alt="Leadership Class">
         <h1></h1>
+        
     </header>
     <nav>
         <a href="index.html">Home</a>
