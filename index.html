@@ -26,6 +26,13 @@
             width: 100%; /* Ensures the image takes the full width of the header */
             height: auto; /* Keeps the aspect ratio of the image */
         }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px; /* Adjust as needed */
+        }
+
         nav {
             background: #000;
             overflow: hidden;
@@ -83,6 +90,11 @@
             display: block; /* Optional: to remove any extra space below the image */
             margin: 0 auto; /* Optional: for centering the image if needed */
         }
+        .logo {
+            max-width: 100%;
+            height: auto;
+        }
+
 
         footer {
             background: #222;
@@ -105,19 +117,38 @@
             .hamburger-menu {
                 display: block; /* Show hamburger icon */
             }
-            nav a {
-                padding: 15px; /* More padding for touch targets */
-                font-size: larger; /* Larger text for better readability */
+            nav.show {
+                display: block;
             }
+
+            nav a {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                text-align: left;
+            }
+            .header-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+            }
+
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="images/LC_header_logo_new.jpg" alt="Leadership Class">
-        <h1></h1>
-        
+        <div class="header-content">
+            <img src="images/LC_header_logo_new.jpg" alt="Leadership Class" class="logo">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
     </header>
+    
     <nav>
         <a href="index.html">Home</a>
         <a href="https://linktr.ee/leadershipclassmusic">Contact</a>
@@ -137,12 +168,6 @@
         <h2></h2>
         <p></p>
     </div>
-    <div class="hamburger-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    
     <footer>
         <p>&copy; 2023 Leadership Class. All rights reserved.</p>
     </footer>
