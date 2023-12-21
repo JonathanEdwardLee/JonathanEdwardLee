@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BJ43GME2E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1BJ43GME2E');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership Class - Alt Rock Band from Springfield, MO</title>
+    <meta name="description" content="Leadership Class, an alternative rock band from Springfield, MO, brings a unique blend of indie and alt-rock music. Discover our latest songs, upcoming shows, and band news.">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Special Elite', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000000;
+            color: #ffffff;
+        }
+
+        body, h1, nav, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+        }
+
+        .header-content {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .hamburger-menu {
+            cursor: pointer;
+            display: none; /* Hidden by default, shown in media query for mobile */
+            position: fixed; /* Keeps the menu at the same spot */
+            bottom: 20px; /* Distance from the bottom of the screen */
+            right: 20px; /* Distance from the right of the screen */
+            z-index: 1000; /* Ensures it's above other elements */
+            /* Add more styling for size, background, etc. */
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
+        }
+
+        .hamburger-menu .bar {
+            width: 30px; /* Width of the bars */
+            height: 3px; /* Height of the bars */
+            background-color: #333; /* Color of the bars */
+            margin: 5px 0; /* Space between the bars */
+            transition: 0.4s;
+        }
+
+        .bar {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            margin: 6px auto;
+            transition: 0.4s;
+        }
+
+        nav {
+            background: #000;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        nav.show {
+            display: block;
+        }
+        .mobile-nav {
+            display: none;
+             /* Styles for the navigation when expanded */
+            position: fixed; /* Optional: make the menu fixed as well */
+            top: 0;
+            right: 0;
+            width: 150px; /* Adjust as needed */
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9); /* Adjust the color as needed */
+            z-index: 999; /* Just below the hamburger menu */
+            overflow-y: auto; /* In case the menu is taller than the screen */
+        }
+
+        .mobile-nav.show {
+            display: block;
+        }
+        .mobile-nav ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .mobile-nav ul li {
+            display: block; /* Stack links vertically */
+            text-align: center; /* Center-align the text */
+        }
+
+        .mobile-nav ul li a {
+            display: block; /* Make the entire area clickable */
+            padding: 15px; /* Add more padding for spacing */
+            color: white; /* Adjust link color as needed */
+            text-decoration: none; /* Remove underline from links */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .mobile-nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Slight highlight on hover */
+        }
+
+        .hero {
+            background: url('images/LC_band_photo.jpg') no-repeat center center/cover;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .content {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .band-logo {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                background-position: center top;
+                height: 150px;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hamburger-menu {
+                display: block;
+            }
+            nav.show {
+                display: block;
+            }
+            .mobile-nav {
+                display: none;
+            }
+
+            .mobile-nav.show {
+                display: block;
+            }
+            nav {
+                display: none; /* Hide the full menu on mobile screens */
+            }
+            nav a {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                text-align: left;
+            }
+            .header-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/LC_header_logo_new.jpg" alt="Leadership Class" class="logo">
+        </div>
+    </header>
+    <div class="hamburger-menu" aria-label="Toggle navigation">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="https://leadershipclass.bandcamp.com/" target="_blank" rel="noopener noreferrer">Music</a></li>
+            <li><a href="https://shop.spotify.com/en/artist/75gcjhF5ZNIkfZhh1xqbQ2/store?utm_content=&utm_promo=&container_platform=&utm_campaign=" target="_blank" rel="noopener noreferrer">Merch</a></li>
+            <li><a href="https://www.youtube.com/@LeadershipClass" target="_blank" rel="noopener noreferrer">Videos</a></li>
+            <li><a href="https://bnds.us/cwaboo" target="_blank" rel="noopener noreferrer">Tour</a></li>
+            <li><a href="https://linktr.ee/leadershipclassmusic" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            <li><a href="https://jonathanedwardlee.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">Guestbook</a></li>
+            <li><a href="index.html">Home</a></li> <!-- Other navigation items -->
+        </ul>
+    </div>
+    <nav>
+        <a href="https://leadershipclass.bandcamp.com/" target="_blank" rel="noopener noreferrer">Music</a>
+        <a href="https://shop.spotify.com/en/artist/75gcjhF5ZNIkfZhh1xqbQ2/store?utm_content=&utm_promo=&container_platform=&utm_campaign=" target="_blank" rel="noopener noreferrer">Merch</a>
+        <a href="https://www.youtube.com/@LeadershipClass" target="_blank" rel="noopener noreferrer">Videos</a>
+        <a href="https://bnds.us/cwaboo" target="_blank" rel="noopener noreferrer">Tour</a>
+        <a href="https://linktr.ee/leadershipclassmusic" target="_blank" rel="noopener noreferrer">Contact</a>
+        <a href="https://jonathanedwardlee.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">Guestbook</a>
+        <a href="index.html">Home</a>
+    </nav>
+    <div class="hero">
+        <!-- Hero content -->
+    </div>
+    <div class="content">
+        <h2>Latest News</h2>
+        <p>Next show: January 12th at Lindberg's with City Grey, Alamo Black, and The Kursk.</p>
+        <img src="images/mushroom.lady.sticker.1000.png" alt="Mushroom Lady Leadership Class Logo" class="band-logo">
+    </div>
+    <main>
+        <h1>Leadership Class Merchandise</h1>
+        <p>Check out our latest band merchandise on our Shopify store!</p>
+
+        <!-- Example of a few merchandise items -->
+        <section class="merch-items">
+            <article class="merch-item">
+                <img src="path-to-image.jpg" alt="Leadership Class Mushroom Lady Shirt">
+                <h2>Item Name</h2>
+                <p>Description of the item.</p>
+                <a href="https://887ba0.myshopify.com/products/mushroom-logo-unisex-cotton-tee-leadership-class" target="_blank">Buy on Shopify</a>
+            </article>
+            <!-- Repeat for other items -->
+        </section>
+
+        <a href="https://887ba0.myshopify.com/" target="_blank" class="shopify-store-link">Visit Our Full Store on Shopify</a>
+    </main>
+    <footer>
+        <p>&copy; 2023 Leadership Class. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('.mobile-nav').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
